@@ -1,0 +1,1893 @@
+{
+  "settings": {
+    "languages": [
+      "pt"
+    ],
+    "forceNER": true,
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "pt"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "pt": {
+        "settings": {
+          "locale": "pt",
+          "trainByDomain": false,
+          "tag": "domain-manager-pt",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "bom,dia": {
+            "intent": "SAUDACAO",
+            "domain": "default"
+          },
+          "oi": {
+            "intent": "SAUDACAO",
+            "domain": "default"
+          },
+          "oioi": {
+            "intent": "SAUDACAO",
+            "domain": "default"
+          },
+          "ola": {
+            "intent": "SAUDACAO",
+            "domain": "default"
+          },
+          "bem,tud": {
+            "intent": "SAUDACAO",
+            "domain": "default"
+          },
+          "boa,tard": {
+            "intent": "SAUDACAO",
+            "domain": "default"
+          },
+          "boa,noit": {
+            "intent": "SAUDACAO",
+            "domain": "default"
+          },
+          "com,fal,quer,voc": {
+            "intent": "SAUDACAO",
+            "domain": "default"
+          },
+          "de,funcion,horari,qual": {
+            "intent": "HORARIO",
+            "domain": "default"
+          },
+          "ai,ate,funcion,hor,q": {
+            "intent": "HORARIO",
+            "domain": "default"
+          },
+          "fech,hor,q": {
+            "intent": "HORARIO",
+            "domain": "default"
+          },
+          "atend,comec,hor,q": {
+            "intent": "HORARIO",
+            "domain": "default"
+          },
+          "dias,funcion,qua": {
+            "intent": "HORARIO",
+            "domain": "default"
+          },
+          "abert,esta": {
+            "intent": "HORARIO",
+            "domain": "default"
+          },
+          "de,o,pont,qual,referenc": {
+            "intent": "LOCALIZACAO",
+            "domain": "default"
+          },
+          "aond,localiz": {
+            "intent": "LOCALIZACAO",
+            "domain": "default"
+          },
+          "ai,aond,fic": {
+            "intent": "LOCALIZACAO",
+            "domain": "default"
+          },
+          "map": {
+            "intent": "LOCALIZACAO",
+            "domain": "default"
+          },
+          "diz,local,me,pod": {
+            "intent": "LOCALIZACAO",
+            "domain": "default"
+          },
+          "default": {
+            "intent": "",
+            "domain": "master_domain"
+          },
+          "contat,em,entro": {
+            "intent": "CONTATO",
+            "domain": "default"
+          },
+          "com,fal,poss,vc": {
+            "intent": "CONTATO",
+            "domain": "default"
+          },
+          "numer,qual": {
+            "intent": "CONTATO",
+            "domain": "default"
+          },
+          "atend,me,nigu": {
+            "intent": "CONTATO",
+            "domain": "default"
+          },
+          "atend": {
+            "intent": "CONTATO",
+            "domain": "default"
+          },
+          "atendent,com,fal,quer": {
+            "intent": "ATENDENTE",
+            "domain": "default"
+          },
+          "atendent": {
+            "intent": "ATENDENTE",
+            "domain": "default"
+          },
+          "algu,com,fal,quer": {
+            "intent": "ATENDENTE",
+            "domain": "default"
+          },
+          "remarc": {
+            "intent": "REMARCA",
+            "domain": "default"
+          },
+          "marc": {
+            "intent": "REMARCA",
+            "domain": "default"
+          },
+          "reagend": {
+            "intent": "REMARCA",
+            "domain": "default"
+          },
+          "bernard": {
+            "intent": "CRIADOR",
+            "domain": "default"
+          },
+          "bern": {
+            "intent": "CRIADOR",
+            "domain": "default"
+          },
+          "criador,e,quem,seu": {
+            "intent": "CRIADOR",
+            "domain": "default"
+          },
+          "criador": {
+            "intent": "CRIADOR",
+            "domain": "default"
+          },
+          "sim": {
+            "intent": "SIM",
+            "domain": "default"
+          },
+          "nao": {
+            "intent": "NAO",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "SAUDACAO": "default",
+          "HORARIO": "default",
+          "LOCALIZACAO": "default",
+          "Me mandar a localização de voces do Google maps": "master_domain",
+          "CONTATO": "default",
+          "ATENDENTE": "default",
+          "REMARCA": "default",
+          "CRIADOR": "default",
+          "SIM": "default",
+          "NAO": "default",
+          "": "master_domain"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "bom dia",
+            "intent": "SAUDACAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "Oi",
+            "intent": "SAUDACAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "Oioi",
+            "intent": "SAUDACAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "ola",
+            "intent": "SAUDACAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "tudo bem",
+            "intent": "SAUDACAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "boa tarde",
+            "intent": "SAUDACAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "boa noite",
+            "intent": "SAUDACAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "quero falar com voces",
+            "intent": "SAUDACAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "bom dia",
+            "intent": "SAUDACAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "OI",
+            "intent": "SAUDACAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "Qual horario de funcionamento",
+            "intent": "HORARIO"
+          },
+          {
+            "domain": "default",
+            "utterance": "Ai funciona ate q horas",
+            "intent": "HORARIO"
+          },
+          {
+            "domain": "default",
+            "utterance": "fecha q horas",
+            "intent": "HORARIO"
+          },
+          {
+            "domain": "default",
+            "utterance": "q horas comeca atendimento",
+            "intent": "HORARIO"
+          },
+          {
+            "domain": "default",
+            "utterance": "quais dias funciona",
+            "intent": "HORARIO"
+          },
+          {
+            "domain": "default",
+            "utterance": "Esta aberto",
+            "intent": "HORARIO"
+          },
+          {
+            "domain": "default",
+            "utterance": "qual o ponto de referencia",
+            "intent": "LOCALIZACAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "Aonde localizado",
+            "intent": "LOCALIZACAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "fica aonde ai",
+            "intent": "LOCALIZACAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "mapa",
+            "intent": "LOCALIZACAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "pode me dizer local",
+            "intent": "LOCALIZACAO"
+          },
+          {
+            "domain": "master_domain",
+            "utterance": "default",
+            "intent": "Me mandar a localização de voces do Google maps"
+          },
+          {
+            "domain": "default",
+            "utterance": "Entro em contato",
+            "intent": "CONTATO"
+          },
+          {
+            "domain": "default",
+            "utterance": "Como posso falar com vc",
+            "intent": "CONTATO"
+          },
+          {
+            "domain": "default",
+            "utterance": "Qual numero",
+            "intent": "CONTATO"
+          },
+          {
+            "domain": "default",
+            "utterance": "niguem me atende",
+            "intent": "CONTATO"
+          },
+          {
+            "domain": "default",
+            "utterance": "atendimento",
+            "intent": "CONTATO"
+          },
+          {
+            "domain": "default",
+            "utterance": "Quero falar com Atendente",
+            "intent": "ATENDENTE"
+          },
+          {
+            "domain": "default",
+            "utterance": "Atendente",
+            "intent": "ATENDENTE"
+          },
+          {
+            "domain": "default",
+            "utterance": "Quero falar com Alguem",
+            "intent": "ATENDENTE"
+          },
+          {
+            "domain": "default",
+            "utterance": "remarca",
+            "intent": "REMARCA"
+          },
+          {
+            "domain": "default",
+            "utterance": "marca",
+            "intent": "REMARCA"
+          },
+          {
+            "domain": "default",
+            "utterance": "Reagendamento",
+            "intent": "REMARCA"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bernardo",
+            "intent": "CRIADOR"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bernado",
+            "intent": "CRIADOR"
+          },
+          {
+            "domain": "default",
+            "utterance": "Quem é seu Criador",
+            "intent": "CRIADOR"
+          },
+          {
+            "domain": "default",
+            "utterance": "Criador",
+            "intent": "CRIADOR"
+          },
+          {
+            "domain": "default",
+            "utterance": "Sim",
+            "intent": "SIM"
+          },
+          {
+            "domain": "default",
+            "utterance": "Não",
+            "intent": "NAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "Nao",
+            "intent": "NAO"
+          },
+          {
+            "domain": "master_domain",
+            "utterance": "default",
+            "intent": ""
+          },
+          {
+            "domain": "master_domain",
+            "utterance": "default",
+            "intent": ""
+          },
+          {
+            "domain": "master_domain",
+            "utterance": "default",
+            "intent": ""
+          },
+          {
+            "domain": "master_domain",
+            "utterance": "default",
+            "intent": ""
+          },
+          {
+            "domain": "master_domain",
+            "utterance": "default",
+            "intent": ""
+          },
+          {
+            "domain": "master_domain",
+            "utterance": "default",
+            "intent": ""
+          },
+          {
+            "domain": "master_domain",
+            "utterance": "default",
+            "intent": ""
+          },
+          {
+            "domain": "master_domain",
+            "utterance": "default",
+            "intent": ""
+          },
+          {
+            "domain": "master_domain",
+            "utterance": "default",
+            "intent": ""
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "pt",
+              "tag": "nlu-pt",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "bom": 1,
+              "dia": 1,
+              "oi": 1,
+              "oioi": 1,
+              "ola": 1,
+              "tud": 1,
+              "bem": 1,
+              "boa": 1,
+              "tard": 1,
+              "noit": 1,
+              "quer": 1,
+              "fal": 1,
+              "com": 1,
+              "voc": 1,
+              "qual": 1,
+              "horari": 1,
+              "de": 1,
+              "funcion": 1,
+              "ai": 1,
+              "ate": 1,
+              "q": 1,
+              "hor": 1,
+              "fech": 1,
+              "comec": 1,
+              "atend": 1,
+              "qua": 1,
+              "dias": 1,
+              "esta": 1,
+              "abert": 1,
+              "o": 1,
+              "pont": 1,
+              "referenc": 1,
+              "aond": 1,
+              "localiz": 1,
+              "fic": 1,
+              "map": 1,
+              "pod": 1,
+              "me": 1,
+              "diz": 1,
+              "local": 1,
+              "default": 1,
+              "entro": 1,
+              "em": 1,
+              "contat": 1,
+              "poss": 1,
+              "vc": 1,
+              "numer": 1,
+              "nigu": 1,
+              "atendent": 1,
+              "algu": 1,
+              "remarc": 1,
+              "marc": 1,
+              "reagend": 1,
+              "bernard": 1,
+              "bern": 1,
+              "quem": 1,
+              "e": 1,
+              "seu": 1,
+              "criador": 1,
+              "sim": 1,
+              "nao": 1
+            },
+            "intents": {
+              "SAUDACAO": 1,
+              "HORARIO": 1,
+              "LOCALIZACAO": 1,
+              "Me mandar a localização de voces do Google maps": 1,
+              "CONTATO": 1,
+              "ATENDENTE": 1,
+              "REMARCA": 1,
+              "CRIADOR": 1,
+              "SIM": 1,
+              "NAO": 1,
+              "": 1
+            },
+            "intentFeatures": {
+              "SAUDACAO": {
+                "bom": 1,
+                "dia": 1,
+                "oi": 1,
+                "oioi": 1,
+                "ola": 1,
+                "tud": 1,
+                "bem": 1,
+                "boa": 1,
+                "tard": 1,
+                "noit": 1,
+                "quer": 1,
+                "fal": 1,
+                "com": 1,
+                "voc": 1
+              },
+              "HORARIO": {
+                "qual": 1,
+                "horari": 1,
+                "de": 1,
+                "funcion": 1,
+                "ai": 1,
+                "ate": 1,
+                "q": 1,
+                "hor": 1,
+                "fech": 1,
+                "comec": 1,
+                "atend": 1,
+                "qua": 1,
+                "dias": 1,
+                "esta": 1,
+                "abert": 1
+              },
+              "LOCALIZACAO": {
+                "qual": 1,
+                "o": 1,
+                "pont": 1,
+                "de": 1,
+                "referenc": 1,
+                "aond": 1,
+                "localiz": 1,
+                "fic": 1,
+                "ai": 1,
+                "map": 1,
+                "pod": 1,
+                "me": 1,
+                "diz": 1,
+                "local": 1
+              },
+              "Me mandar a localização de voces do Google maps": {
+                "default": 1
+              },
+              "CONTATO": {
+                "entro": 1,
+                "em": 1,
+                "contat": 1,
+                "com": 1,
+                "poss": 1,
+                "fal": 1,
+                "vc": 1,
+                "qual": 1,
+                "numer": 1,
+                "nigu": 1,
+                "me": 1,
+                "atend": 1
+              },
+              "ATENDENTE": {
+                "quer": 1,
+                "fal": 1,
+                "com": 1,
+                "atendent": 1,
+                "algu": 1
+              },
+              "REMARCA": {
+                "remarc": 1,
+                "marc": 1,
+                "reagend": 1
+              },
+              "CRIADOR": {
+                "bernard": 1,
+                "bern": 1,
+                "quem": 1,
+                "e": 1,
+                "seu": 1,
+                "criador": 1
+              },
+              "SIM": {
+                "sim": 1
+              },
+              "NAO": {
+                "nao": 1
+              },
+              "": {
+                "default": 1
+              }
+            },
+            "featuresToIntent": {
+              "bom": [
+                "SAUDACAO"
+              ],
+              "dia": [
+                "SAUDACAO"
+              ],
+              "oi": [
+                "SAUDACAO"
+              ],
+              "oioi": [
+                "SAUDACAO"
+              ],
+              "ola": [
+                "SAUDACAO"
+              ],
+              "tud": [
+                "SAUDACAO"
+              ],
+              "bem": [
+                "SAUDACAO"
+              ],
+              "boa": [
+                "SAUDACAO"
+              ],
+              "tard": [
+                "SAUDACAO"
+              ],
+              "noit": [
+                "SAUDACAO"
+              ],
+              "quer": [
+                "SAUDACAO",
+                "ATENDENTE"
+              ],
+              "fal": [
+                "SAUDACAO",
+                "CONTATO",
+                "ATENDENTE"
+              ],
+              "com": [
+                "SAUDACAO",
+                "CONTATO",
+                "ATENDENTE"
+              ],
+              "voc": [
+                "SAUDACAO"
+              ],
+              "qual": [
+                "HORARIO",
+                "LOCALIZACAO",
+                "CONTATO"
+              ],
+              "horari": [
+                "HORARIO"
+              ],
+              "de": [
+                "HORARIO",
+                "LOCALIZACAO"
+              ],
+              "funcion": [
+                "HORARIO"
+              ],
+              "ai": [
+                "HORARIO",
+                "LOCALIZACAO"
+              ],
+              "ate": [
+                "HORARIO"
+              ],
+              "q": [
+                "HORARIO"
+              ],
+              "hor": [
+                "HORARIO"
+              ],
+              "fech": [
+                "HORARIO"
+              ],
+              "comec": [
+                "HORARIO"
+              ],
+              "atend": [
+                "HORARIO",
+                "CONTATO"
+              ],
+              "qua": [
+                "HORARIO"
+              ],
+              "dias": [
+                "HORARIO"
+              ],
+              "esta": [
+                "HORARIO"
+              ],
+              "abert": [
+                "HORARIO"
+              ],
+              "o": [
+                "LOCALIZACAO"
+              ],
+              "pont": [
+                "LOCALIZACAO"
+              ],
+              "referenc": [
+                "LOCALIZACAO"
+              ],
+              "aond": [
+                "LOCALIZACAO"
+              ],
+              "localiz": [
+                "LOCALIZACAO"
+              ],
+              "fic": [
+                "LOCALIZACAO"
+              ],
+              "map": [
+                "LOCALIZACAO"
+              ],
+              "pod": [
+                "LOCALIZACAO"
+              ],
+              "me": [
+                "LOCALIZACAO",
+                "CONTATO"
+              ],
+              "diz": [
+                "LOCALIZACAO"
+              ],
+              "local": [
+                "LOCALIZACAO"
+              ],
+              "default": [
+                "Me mandar a localização de voces do Google maps",
+                ""
+              ],
+              "entro": [
+                "CONTATO"
+              ],
+              "em": [
+                "CONTATO"
+              ],
+              "contat": [
+                "CONTATO"
+              ],
+              "poss": [
+                "CONTATO"
+              ],
+              "vc": [
+                "CONTATO"
+              ],
+              "numer": [
+                "CONTATO"
+              ],
+              "nigu": [
+                "CONTATO"
+              ],
+              "atendent": [
+                "ATENDENTE"
+              ],
+              "algu": [
+                "ATENDENTE"
+              ],
+              "remarc": [
+                "REMARCA"
+              ],
+              "marc": [
+                "REMARCA"
+              ],
+              "reagend": [
+                "REMARCA"
+              ],
+              "bernard": [
+                "CRIADOR"
+              ],
+              "bern": [
+                "CRIADOR"
+              ],
+              "quem": [
+                "CRIADOR"
+              ],
+              "e": [
+                "CRIADOR"
+              ],
+              "seu": [
+                "CRIADOR"
+              ],
+              "criador": [
+                "CRIADOR"
+              ],
+              "sim": [
+                "SIM"
+              ],
+              "nao": [
+                "NAO"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "pt",
+                "tag": "nlu-pt",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "bom",
+                "dia",
+                "oi",
+                "oioi",
+                "ola",
+                "tud",
+                "bem",
+                "boa",
+                "tard",
+                "noit",
+                "quer",
+                "fal",
+                "com",
+                "voc",
+                "qual",
+                "horari",
+                "de",
+                "funcion",
+                "ai",
+                "ate",
+                "q",
+                "hor",
+                "fech",
+                "comec",
+                "atend",
+                "qua",
+                "dias",
+                "esta",
+                "abert",
+                "o",
+                "pont",
+                "referenc",
+                "aond",
+                "localiz",
+                "fic",
+                "map",
+                "pod",
+                "me",
+                "diz",
+                "local",
+                "default",
+                "entro",
+                "em",
+                "contat",
+                "poss",
+                "vc",
+                "numer",
+                "nigu",
+                "atendent",
+                "algu",
+                "remarc",
+                "marc",
+                "reagend",
+                "bernard",
+                "bern",
+                "quem",
+                "e",
+                "seu",
+                "criador",
+                "sim",
+                "nao"
+              ],
+              "intents": [
+                "SAUDACAO",
+                "HORARIO",
+                "LOCALIZACAO",
+                "Me mandar a localização de voces do Google maps",
+                "CONTATO",
+                "ATENDENTE",
+                "REMARCA",
+                "CRIADOR",
+                "SIM",
+                "NAO",
+                ""
+              ],
+              "perceptrons": [
+                [
+                  5.607852935791016,
+                  5.607852935791016,
+                  11.215642929077148,
+                  11.2092924118042,
+                  11.206379890441895,
+                  5.607612133026123,
+                  5.607612133026123,
+                  7.476905822753906,
+                  3.738820791244507,
+                  3.738081216812134,
+                  1.5939849615097046,
+                  -0.03531331941485405,
+                  -0.03531331941485405,
+                  9.687429428100586,
+                  -2.382974147796631,
+                  -0.565058171749115,
+                  -1.2334105968475342,
+                  -2.2145261764526367,
+                  -1.2939977645874023,
+                  -0.34730446338653564,
+                  -1.7599714994430542,
+                  -1.7599714994430542,
+                  -0.7502114176750183,
+                  -0.37664103507995605,
+                  -3.1169350147247314,
+                  -0.9803340435028076,
+                  -0.9803340435028076,
+                  -1.8194142580032349,
+                  -1.8194142580032349,
+                  -0.514818549156189,
+                  -0.514818549156189,
+                  -0.514818549156189,
+                  -2.2621569633483887,
+                  -1.427810549736023,
+                  -0.7764855623245239,
+                  -3.1055407524108887,
+                  -0.8597279787063599,
+                  -1.4452335834503174,
+                  -0.8597279787063599,
+                  -0.8597279787063599,
+                  -3.1887474060058594,
+                  -1.2425954341888428,
+                  -1.2425954341888428,
+                  -1.2425954341888428,
+                  -1.6137845516204834,
+                  -1.6137845516204834,
+                  -1.0764172077178955,
+                  -0.49603480100631714,
+                  -4.593055725097656,
+                  -4.590855598449707,
+                  -3.0700299739837646,
+                  -3.069437026977539,
+                  -3.06874418258667,
+                  -3.0679471492767334,
+                  -3.067040205001831,
+                  -0.553404688835144,
+                  -0.553404688835144,
+                  -0.553404688835144,
+                  -3.0665793418884277,
+                  -3.065035104751587,
+                  -3.069117784500122,
+                  3.069529174332312
+                ],
+                [
+                  -0.35339030623435974,
+                  -0.35339030623435974,
+                  -0.6240217685699463,
+                  -0.552804172039032,
+                  -0.5468818545341492,
+                  -0.3169444799423218,
+                  -0.3169444799423218,
+                  -0.4383414089679718,
+                  -0.22531002759933472,
+                  -0.20922735333442688,
+                  -0.2396216243505478,
+                  -0.5311753153800964,
+                  -0.5311753153800964,
+                  0,
+                  1.0476100444793701,
+                  3.9083032608032227,
+                  2.563845634460449,
+                  6.394018650054932,
+                  -1.9563642740249634,
+                  -1.2731808423995972,
+                  5.37770414352417,
+                  5.37770414352417,
+                  3.1703736782073975,
+                  3.4806861877441406,
+                  -0.3390258550643921,
+                  3.7588448524475098,
+                  3.7588448524475098,
+                  6.955109596252441,
+                  6.955109596252441,
+                  -1.3442357778549194,
+                  -1.3442357778549194,
+                  -1.3442357778549194,
+                  -1.084004282951355,
+                  -0.4092317223548889,
+                  -0.5728847980499268,
+                  -0.7635251879692078,
+                  -0.2836257219314575,
+                  -0.9214292168617249,
+                  -0.2836257219314575,
+                  -0.2836257219314575,
+                  -0.9761006236076355,
+                  -0.40239691734313965,
+                  -0.40239691734313965,
+                  -0.40239691734313965,
+                  -0.22573280334472656,
+                  -0.22573280334472656,
+                  -1.5155292749404907,
+                  -0.5584683418273926,
+                  -0.6878438591957092,
+                  -0.08158023655414581,
+                  -0.6285865902900696,
+                  -0.6190729737281799,
+                  -0.6081146001815796,
+                  -0.5998064875602722,
+                  -0.5917510986328125,
+                  -0.190199077129364,
+                  -0.190199077129364,
+                  -0.190199077129364,
+                  -0.6284326910972595,
+                  -0.5764391422271729,
+                  -0.6640327572822571,
+                  0.36977371950066235
+                ],
+                [
+                  -0.6107717156410217,
+                  -0.6107717156410217,
+                  -1.2212833166122437,
+                  -1.2195106744766235,
+                  -1.2189806699752808,
+                  -0.6105836629867554,
+                  -0.6105836629867554,
+                  -0.8141777515411377,
+                  -0.40717318654060364,
+                  -0.40699341893196106,
+                  -0.34255272150039673,
+                  -0.7506749033927917,
+                  -0.7506749033927917,
+                  0,
+                  0.380014568567276,
+                  -1.5141304731369019,
+                  2.035491943359375,
+                  -2.122699499130249,
+                  2.2833540439605713,
+                  -0.5139984488487244,
+                  -0.5949271321296692,
+                  -0.5949271321296692,
+                  -0.05481234937906265,
+                  -0.0033467423636466265,
+                  -1.9532164335250854,
+                  -0.04859660565853119,
+                  -0.04859660565853119,
+                  -0.6105565428733826,
+                  -0.6105565428733826,
+                  3.549628734588623,
+                  3.549628734588623,
+                  3.549628734588623,
+                  7.9485368728637695,
+                  5.116025924682617,
+                  2.832526922225952,
+                  13.054634094238281,
+                  3.6341724395751953,
+                  2.1614208221435547,
+                  3.6341724395751953,
+                  3.6341724395751953,
+                  -1.4273465871810913,
+                  -0.567011833190918,
+                  -0.567011833190918,
+                  -0.567011833190918,
+                  -0.3418722450733185,
+                  -0.3418722450733185,
+                  -1.6536527872085571,
+                  -1.4676425457000732,
+                  -1.2243876457214355,
+                  -0.13604620099067688,
+                  -1.221941590309143,
+                  -1.2217118740081787,
+                  -1.2215155363082886,
+                  -1.221285104751587,
+                  -1.2210180759429932,
+                  -0.2666294276714325,
+                  -0.2666294276714325,
+                  -0.2666294276714325,
+                  -1.2210166454315186,
+                  -1.220454216003418,
+                  -1.2215465307235718,
+                  1.2216048485320241
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.06997576355934143,
+                  -0.1412665843963623,
+                  -0.1412665843963623,
+                  0,
+                  -0.1119694709777832,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.19712407886981964,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.07903264462947845,
+                  0,
+                  0,
+                  1.2113744020462036,
+                  -0.09691286087036133,
+                  -0.09691286087036133,
+                  -0.09691286087036133,
+                  -0.04889172315597534,
+                  -0.04889172315597534,
+                  -0.1119694709777832,
+                  -0.07903264462947845,
+                  -0.17220716178417206,
+                  -0.024168500676751137,
+                  -0.1527283936738968,
+                  -0.1501971334218979,
+                  -0.14817732572555542,
+                  -0.14652644097805023,
+                  -0.14510004222393036,
+                  -0.04693673178553581,
+                  -0.04693673178553581,
+                  -0.04693673178553581,
+                  -0.1562642753124237,
+                  -0.14323313534259796,
+                  -0.16351722180843353,
+                  -0.39821883902406635
+                ],
+                [
+                  -0.6155810952186584,
+                  -0.6155810952186584,
+                  -1.2289049625396729,
+                  -1.2228225469589233,
+                  -1.221882939338684,
+                  -0.6144007444381714,
+                  -0.6144007444381714,
+                  -0.8200131058692932,
+                  -0.41020044684410095,
+                  -0.40961191058158875,
+                  -3.391812324523926,
+                  1.568886160850525,
+                  1.568886160850525,
+                  -0.977609395980835,
+                  5.1083221435546875,
+                  -1.6817352771759033,
+                  -2.8456122875213623,
+                  -1.8131177425384521,
+                  -0.28013068437576294,
+                  -0.03859042748808861,
+                  -4.6818742752075195,
+                  -4.6818742752075195,
+                  -0.05989687517285347,
+                  -4.549447059631348,
+                  12.74350643157959,
+                  -0.06280382722616196,
+                  -0.06280382722616196,
+                  -0.612434983253479,
+                  -0.612434983253479,
+                  -1.1638754606246948,
+                  -1.1638754606246948,
+                  -1.1638754606246948,
+                  -0.7243860363960266,
+                  -0.5010669231414795,
+                  -0.22304750978946686,
+                  -1.213496446609497,
+                  -1.1072394847869873,
+                  -0.35632961988449097,
+                  -1.1072394847869873,
+                  -1.1072394847869873,
+                  -1.3384345769882202,
+                  4.353399753570557,
+                  4.353399753570557,
+                  4.353399753570557,
+                  4.960790634155273,
+                  4.960790634155273,
+                  7.954118251800537,
+                  0.7711145877838135,
+                  -1.61181640625,
+                  -1.3083913326263428,
+                  -1.2295180559158325,
+                  -1.228943943977356,
+                  -1.228338360786438,
+                  -1.2276997566223145,
+                  -1.2270268201828003,
+                  -0.2935677468776703,
+                  -0.2935677468776703,
+                  -0.2935677468776703,
+                  -1.2266430854797363,
+                  -1.2256633043289185,
+                  -1.2308497428894043,
+                  1.2336698225033655
+                ],
+                [
+                  -0.4312266707420349,
+                  -0.4312266707420349,
+                  -0.8538297414779663,
+                  -0.8363726139068604,
+                  -0.8344225287437439,
+                  -0.426832914352417,
+                  -0.426832914352417,
+                  -0.5722061395645142,
+                  -0.28650858998298645,
+                  -0.2848822772502899,
+                  1.5263787508010864,
+                  -0.09233645349740982,
+                  -0.09233645349740982,
+                  -5.263306140899658,
+                  -0.4874606728553772,
+                  -0.036736540496349335,
+                  -0.1274261474609375,
+                  -0.3389540910720825,
+                  -0.19394581019878387,
+                  -0.023801403120160103,
+                  -0.30791571736335754,
+                  -0.30791571736335754,
+                  -0.2412472516298294,
+                  -0.029549600556492805,
+                  -0.821844220161438,
+                  -0.25884881615638733,
+                  -0.25884881615638733,
+                  -0.4252127707004547,
+                  -0.4252127707004547,
+                  -0.08268924802541733,
+                  -0.08268924802541733,
+                  -0.08268924802541733,
+                  -0.5060575604438782,
+                  -0.3466196060180664,
+                  -0.15857739746570587,
+                  -0.8259379267692566,
+                  -0.19811823964118958,
+                  -0.2613634467124939,
+                  -0.19811823964118958,
+                  -0.19811823964118958,
+                  -0.8714318871498108,
+                  -0.28420814871788025,
+                  -0.28420814871788025,
+                  -0.28420814871788025,
+                  -1.5963809490203857,
+                  -1.5963809490203857,
+                  -0.35946595668792725,
+                  -0.06191655620932579,
+                  12.682811737060547,
+                  11.666162490844727,
+                  -0.8557590246200562,
+                  -0.8541256189346313,
+                  -0.852465033531189,
+                  -0.8507769703865051,
+                  -0.8490606546401978,
+                  -0.14464809000492096,
+                  -0.14464809000492096,
+                  -0.14464809000492096,
+                  -0.8474909663200378,
+                  -0.8455914258956909,
+                  -0.861865758895874,
+                  0.8728676918150511
+                ],
+                [
+                  -0.9826902747154236,
+                  -0.9826902747154236,
+                  -1.961000680923462,
+                  -1.9583684206008911,
+                  -1.9575591087341309,
+                  -0.9801165461540222,
+                  -0.9801165461540222,
+                  -1.3073430061340332,
+                  -0.6544294953346252,
+                  -0.6528868079185486,
+                  -0.4351314306259155,
+                  -0.7093906402587891,
+                  -0.7093906402587891,
+                  -0.3046451807022095,
+                  -1.16289484500885,
+                  -0.15797440707683563,
+                  -0.3639397919178009,
+                  -0.8333667516708374,
+                  -0.45534199476242065,
+                  -0.08438363671302795,
+                  -0.7248062491416931,
+                  -0.7248062491416931,
+                  -0.5106317400932312,
+                  -0.10681360214948654,
+                  -1.954392433166504,
+                  -0.563439130783081,
+                  -0.563439130783081,
+                  -0.9801120162010193,
+                  -0.9801120162010193,
+                  -0.19208048284053802,
+                  -0.19208048284053802,
+                  -0.19208048284053802,
+                  -1.158825397491455,
+                  -0.8013938069343567,
+                  -0.35718563199043274,
+                  -1.9556407928466797,
+                  -0.43661752343177795,
+                  -0.6501412391662598,
+                  -0.43661752343177795,
+                  -0.43661752343177795,
+                  -1.9671223163604736,
+                  -0.6533203721046448,
+                  -0.6533203721046448,
+                  -0.6533203721046448,
+                  -0.27419325709342957,
+                  -0.27419325709342957,
+                  -0.7969446778297424,
+                  -0.20686674118041992,
+                  -1.9527615308761597,
+                  -0.10541000962257385,
+                  12.320615768432617,
+                  12.31881332397461,
+                  12.315717697143555,
+                  -1.9610264301300049,
+                  -1.960455298423767,
+                  -0.37503185868263245,
+                  -0.37503185868263245,
+                  -0.37503185868263245,
+                  -1.9604336023330688,
+                  -1.9596773386001587,
+                  -1.964432716369629,
+                  1.960407682158734
+                ],
+                [
+                  -0.9817340970039368,
+                  -0.9817340970039368,
+                  -1.960142731666565,
+                  -1.9579914808273315,
+                  -1.9572618007659912,
+                  -0.9799912571907043,
+                  -0.9799912571907043,
+                  -1.3067587614059448,
+                  -0.6534935235977173,
+                  -0.6532437801361084,
+                  -0.4403671324253082,
+                  -0.7118857502937317,
+                  -0.7118857502937317,
+                  -0.30806854367256165,
+                  -1.1777044534683228,
+                  -0.1831006407737732,
+                  -0.3915904760360718,
+                  -0.8741467595100403,
+                  -0.4776504337787628,
+                  -0.1004936471581459,
+                  -0.7413902282714844,
+                  -0.7413902282714844,
+                  -0.47733092308044434,
+                  -0.12228146940469742,
+                  -1.9543684720993042,
+                  -0.5429757237434387,
+                  -0.5429757237434387,
+                  -0.9799441695213318,
+                  -0.9799441695213318,
+                  -0.18962903320789337,
+                  -0.18962903320789337,
+                  -0.18962903320789337,
+                  -1.1538223028182983,
+                  -0.8060393333435059,
+                  -0.3473544418811798,
+                  -1.9554729461669922,
+                  -0.43433648347854614,
+                  -0.6568703055381775,
+                  -0.43433648347854614,
+                  -0.43433648347854614,
+                  -1.9682033061981201,
+                  -0.6532524228096008,
+                  -0.6532524228096008,
+                  -0.6532524228096008,
+                  -0.2714383900165558,
+                  -0.2714383900165558,
+                  -0.7817494869232178,
+                  -0.2182297557592392,
+                  -1.952899694442749,
+                  -0.09505052119493484,
+                  -1.951479196548462,
+                  -1.9500397443771362,
+                  -1.9484909772872925,
+                  12.324975967407227,
+                  12.32334041595459,
+                  0.03308830410242081,
+                  0.03308830410242081,
+                  0.03308830410242081,
+                  12.251083374023438,
+                  -1.9592300653457642,
+                  -1.9615215063095093,
+                  1.960684734186576
+                ],
+                [
+                  -0.34086716175079346,
+                  -0.34086716175079346,
+                  -0.6619895100593567,
+                  -0.6461318135261536,
+                  -0.6454942226409912,
+                  -0.33081579208374023,
+                  -0.33081579208374023,
+                  -0.4441775679588318,
+                  -0.22559912502765656,
+                  -0.21823367476463318,
+                  -0.14640305936336517,
+                  -0.23953911662101746,
+                  -0.23953911662101746,
+                  -0.11215723305940628,
+                  -0.39633557200431824,
+                  -0.06126898527145386,
+                  -0.13800278306007385,
+                  -0.2943541705608368,
+                  -0.16609780490398407,
+                  -0.03263125941157341,
+                  -0.25062599778175354,
+                  -0.25062599778175354,
+                  -0.16343465447425842,
+                  -0.041299011558294296,
+                  -0.6446533203125,
+                  -0.18502795696258545,
+                  -0.18502795696258545,
+                  -0.32946357131004333,
+                  -0.32946357131004333,
+                  -0.06982472538948059,
+                  -0.06982472538948059,
+                  -0.06982472538948059,
+                  -0.39212173223495483,
+                  -0.2662428319454193,
+                  -0.1248062327504158,
+                  -0.6448107957839966,
+                  -0.1440344750881195,
+                  -0.22457030415534973,
+                  -0.1440344750881195,
+                  -0.1440344750881195,
+                  -0.6997707486152649,
+                  -0.21876902878284454,
+                  -0.21876902878284454,
+                  -0.21876902878284454,
+                  -0.0928933247923851,
+                  -0.0928933247923851,
+                  -0.2565031945705414,
+                  -0.07816227525472641,
+                  -0.644279420375824,
+                  -0.022559352219104767,
+                  -0.643962025642395,
+                  -0.6436218023300171,
+                  -0.6432461738586426,
+                  -0.6428343057632446,
+                  -0.6423850655555725,
+                  -0.0840979516506195,
+                  -0.0840979516506195,
+                  -0.0840979516506195,
+                  -0.6420071125030518,
+                  13.63040542602539,
+                  -0.6756620407104492,
+                  0.6448927527171571
+                ],
+                [
+                  -0.43347516655921936,
+                  -0.43347516655921936,
+                  -0.7355806827545166,
+                  -0.6273461580276489,
+                  -0.6191790699958801,
+                  -0.374961793422699,
+                  -0.374961793422699,
+                  -0.5358171463012695,
+                  -0.27262091636657715,
+                  -0.25268301367759705,
+                  -0.1744721382856369,
+                  -0.2824243903160095,
+                  -0.2824243903160095,
+                  -0.14662355184555054,
+                  -0.45185643434524536,
+                  -0.10159896314144135,
+                  -0.20859166979789734,
+                  -0.38851287961006165,
+                  -0.22492340207099915,
+                  -0.055135998874902725,
+                  -0.3167623281478882,
+                  -0.3167623281478882,
+                  -0.16697385907173157,
+                  -0.061180394142866135,
+                  -0.5979335904121399,
+                  -0.20193004608154297,
+                  -0.20193004608154297,
+                  -0.35779914259910583,
+                  -0.35779914259910583,
+                  -0.09406869113445282,
+                  -0.09406869113445282,
+                  -0.09406869113445282,
+                  -0.44021251797676086,
+                  -0.280622661113739,
+                  -0.15055391192436218,
+                  -0.5899185538291931,
+                  -0.16608190536499023,
+                  -0.27925339341163635,
+                  -0.16608190536499023,
+                  -0.16608190536499023,
+                  -1.0388773679733276,
+                  -0.24638114869594574,
+                  -0.24638114869594574,
+                  -0.24638114869594574,
+                  -0.0962786003947258,
+                  -0.0962786003947258,
+                  -0.23800119757652283,
+                  -0.10278913378715515,
+                  -0.5795965194702148,
+                  -0.004972814582288265,
+                  -0.5759721398353577,
+                  -0.5737394690513611,
+                  -0.5722699761390686,
+                  -0.5714415311813354,
+                  -0.5711304545402527,
+                  -0.11180046945810318,
+                  -0.11180046945810318,
+                  -0.11180046945810318,
+                  -0.5711703896522522,
+                  -0.5709194540977478,
+                  13.71454906463623,
+                  0.5711139174768993
+                ],
+                [
+                  -0.6979199647903442,
+                  -0.6979199647903442,
+                  -0.9728245139122009,
+                  -0.7790529131889343,
+                  -0.7706215381622314,
+                  -0.486407071352005,
+                  -0.486407071352005,
+                  -0.7918125987052917,
+                  -0.38038015365600586,
+                  -0.34049636125564575,
+                  -0.31656941771507263,
+                  -0.4076603353023529,
+                  -0.4076603353023529,
+                  -0.2512204349040985,
+                  -0.5335947275161743,
+                  -0.17137998342514038,
+                  -0.40538516640663147,
+                  -0.6864957213401794,
+                  -0.400760680437088,
+                  -0.1400841921567917,
+                  -0.5656352639198303,
+                  -0.5656352639198303,
+                  -0.19406159222126007,
+                  -0.1150682121515274,
+                  -0.40767771005630493,
+                  -0.23806823790073395,
+                  -0.23806823790073395,
+                  -0.4430120587348938,
+                  -0.4430120587348938,
+                  -0.16019462049007416,
+                  -0.16019462049007416,
+                  -0.16019462049007416,
+                  -0.5886855721473694,
+                  -0.34862059354782104,
+                  -0.2049318253993988,
+                  -0.7551583051681519,
+                  -0.23520518839359283,
+                  -0.3398100733757019,
+                  -0.23520518839359283,
+                  -0.23520518839359283,
+                  12.723238945007324,
+                  -0.168346107006073,
+                  -0.168346107006073,
+                  -0.168346107006073,
+                  -0.055715057998895645,
+                  -0.055715057998895645,
+                  -0.08568839728832245,
+                  -0.06727148592472076,
+                  -0.2757467031478882,
+                  -0.007385483477264643,
+                  -0.25642457604408264,
+                  -0.24963854253292084,
+                  -0.2449750006198883,
+                  -0.23895986378192902,
+                  -0.23463308811187744,
+                  -0.08674132823944092,
+                  -0.08674132823944092,
+                  -0.08674132823944092,
+                  -0.2718427777290344,
+                  -0.2259940356016159,
+                  -0.2874576449394226,
+                  0.7493195452642312
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "pt",
+        "bom dia"
+      ],
+      [
+        "pt",
+        "Oi"
+      ],
+      [
+        "pt",
+        "Oioi"
+      ],
+      [
+        "pt",
+        "ola"
+      ],
+      [
+        "pt",
+        "tudo bem"
+      ],
+      [
+        "pt",
+        "boa tarde"
+      ],
+      [
+        "pt",
+        "boa noite"
+      ],
+      [
+        "pt",
+        "quero falar com voces"
+      ],
+      [
+        "pt",
+        "bom dia"
+      ],
+      [
+        "pt",
+        "OI"
+      ],
+      [
+        "pt",
+        "Qual horario de funcionamento"
+      ],
+      [
+        "pt",
+        "Ai funciona ate q horas"
+      ],
+      [
+        "pt",
+        "fecha q horas"
+      ],
+      [
+        "pt",
+        "q horas comeca atendimento"
+      ],
+      [
+        "pt",
+        "quais dias funciona"
+      ],
+      [
+        "pt",
+        "Esta aberto"
+      ],
+      [
+        "pt",
+        "qual o ponto de referencia"
+      ],
+      [
+        "pt",
+        "Aonde localizado"
+      ],
+      [
+        "pt",
+        "fica aonde ai"
+      ],
+      [
+        "pt",
+        "mapa"
+      ],
+      [
+        "pt",
+        "pode me dizer local"
+      ],
+      [
+        "pt",
+        "Me mandar a localização de voces do Google maps"
+      ],
+      [
+        "pt",
+        "Entro em contato"
+      ],
+      [
+        "pt",
+        "Como posso falar com vc"
+      ],
+      [
+        "pt",
+        "Qual numero"
+      ],
+      [
+        "pt",
+        "niguem me atende"
+      ],
+      [
+        "pt",
+        "atendimento"
+      ],
+      [
+        "pt",
+        "Quero falar com Atendente"
+      ],
+      [
+        "pt",
+        "Atendente"
+      ],
+      [
+        "pt",
+        "Quero falar com Alguem"
+      ],
+      [
+        "pt",
+        "remarca"
+      ],
+      [
+        "pt",
+        "marca"
+      ],
+      [
+        "pt",
+        "Reagendamento"
+      ],
+      [
+        "pt",
+        "Bernardo"
+      ],
+      [
+        "pt",
+        "Bernado"
+      ],
+      [
+        "pt",
+        "Quem é seu Criador"
+      ],
+      [
+        "pt",
+        "Criador"
+      ],
+      [
+        "pt",
+        "Sim"
+      ],
+      [
+        "pt",
+        "Não"
+      ],
+      [
+        "pt",
+        "Nao"
+      ],
+      [
+        "pt",
+        ""
+      ],
+      [
+        "pt",
+        ""
+      ],
+      [
+        "pt",
+        ""
+      ],
+      [
+        "pt",
+        ""
+      ],
+      [
+        "pt",
+        ""
+      ],
+      [
+        "pt",
+        ""
+      ],
+      [
+        "pt",
+        ""
+      ],
+      [
+        "pt",
+        ""
+      ],
+      [
+        "pt",
+        ""
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "pt": {
+        "SAUDACAO": [
+          {
+            "answer": "Oi, tudo bem?👋\nSou Zet, *Assistente Virtual da Unidade CIMEB.*\nPara continuar nosso atendimento, pode me explicar sua duvida?\n▪️Reagendamento\n▪️Cadastro\n▪️Infusão\n▪️Oftamologia\n▪️Ação Judicial\n▪️Atendente\n"
+          },
+          {
+            "answer": "Olá, me chamo Zet 🤖\n*Assistente Virtual da Unidade CIMEB.*\nSeja Bem Vindo\nPor gentiliza pode me dizer sua duvida?\n▪️Reagendamento\n▪️Cadastro\n▪️Infusão\n▪️Oftamologia\n▪️Ação Judicial\n▪️Atendente\n"
+          }
+        ],
+        "LOCALIZACAO": [
+          {
+            "answer": "*CIMEB* fica localizado:\nAv. Laurindo Régis,Engenho Velho de Brotas,\nSalvador - BA, 40240-550\nPerto da Antiga Prefeitura Bairro de Brotas\nDentro do parque Solar Boa Vista"
+          }
+        ],
+        "CONTATO": [
+          {
+            "answer": "NaN▪️Reagendamento\n▪️Cadastro\n▪️Infusão\n▪️Oftamologia\n▪️Ação Judicial\n▪️Atendente\nOu voce pode ligar para recepção:\n(71) 3116-4935\n(71) 3117-1645"
+          }
+        ],
+        "CRIADOR": [
+          {
+            "answer": "Meu criador\nBernardo Nogueira,02/02/2022\n"
+          },
+          {
+            "answer": "//Bernardo Nogueira"
+          }
+        ],
+        "SIM": [
+          {
+            "answer": "👍👍👍"
+          }
+        ],
+        "NAO": [
+          {
+            "answer": "Por gentiliza pode me dizer sua duvida?"
+          }
+        ],
+        "": [
+          {
+            "answer": ""
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}

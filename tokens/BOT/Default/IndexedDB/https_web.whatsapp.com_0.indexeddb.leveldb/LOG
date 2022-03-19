@@ -1,0 +1,14 @@
+2022/03/15-15:31:59.333 af0 Creating DB D:\Lab\3-Projetos\zetBot_CIMEB\tokens\BOT\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb since it was missing.
+2022/03/15-15:31:59.539 af0 Reusing MANIFEST D:\Lab\3-Projetos\zetBot_CIMEB\tokens\BOT\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/03/15-15:32:39.090 2964 Level-0 table #5: started
+2022/03/15-15:32:40.924 2964 Level-0 table #5: 1115463 bytes OK
+2022/03/15-15:32:41.108 2964 Delete type=0 #3
+2022/03/15-15:33:01.282 1e40 Level-0 table #7: started
+2022/03/15-15:33:11.571 1e40 Level-0 table #7: 1065915 bytes OK
+2022/03/15-15:33:13.848 1e40 Delete type=0 #4
+2022/03/15-15:33:14.952 86c Compacting 1@1 + 1@2 files
+2022/03/15-15:33:15.277 86c Generated table #8@1: 25684 keys, 1047186 bytes
+2022/03/15-15:33:15.277 86c Compacted 1@1 + 1@2 files => 1047186 bytes
+2022/03/15-15:33:15.287 86c compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/03/15-15:33:15.295 86c Delete type=2 #5
+2022/03/15-15:33:15.297 86c Delete type=2 #7
