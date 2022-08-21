@@ -1,7 +1,7 @@
 <div align="center">
   
 # Zet - ChatBot com Machine Learning 🤖
-[![Tech](https://skillicons.dev/icons?i=html,css,js)](https://skillicons.dev)
+[![Tech](https://skillicons.dev/icons?i=bots,js,ts)](https://skillicons.dev)
 
 </div>
 
