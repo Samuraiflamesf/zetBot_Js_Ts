@@ -5,7 +5,8 @@
 
 </div>
 
-# 📄 Automação/Zet - ChatBot 🤖 ![status-descontinuado](https://user-images.githubusercontent.com/62897976/185768580-1dcbe992-a35c-4f36-8b2b-14d469203d02.svg)
+# 📄 Automação/Zet - ChatBot 🤖 
+![status-descontinuado](https://user-images.githubusercontent.com/62897976/185768580-1dcbe992-a35c-4f36-8b2b-14d469203d02.svg)
 
 > Resumo do Projeto: A melhoria da saúde pública é um dos grandes desafios que o Brasil precisa superar, principalmente quando avaliamos o Sistema Único de Saúde (SUS). Sendo assim, precisamos mudar tal cenário, para isso precisamos utilizar a tecnologia a nosso favor. Em consequência disso, vê-se a todo instante, falta de profissionais capacitados e estrutura para atender a curva crescente por demandas são celeumas das unidades públicas. Levando-se em conta o que foi observado, em pensamento micro e focal sobre a unidade CIMEB é observada a pressão na equipe de recepção para conciliar atendimento, fluxo de incongruente (alternando momentos de inércia e agitação) e a dificuldade/demora par finalizar atendimentos, são alguns destes problemas.
 
